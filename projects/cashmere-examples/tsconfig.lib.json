@@ -9,7 +9,7 @@
         "sourceMap": true,
         "inlineSources": true,
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
+        "experimentalDecorators": false,
         "importHelpers": true,
         "types": [],
         "lib": ["dom", "es2015"],

@@ -30,6 +30,7 @@ import {
     TabsModule,
     TableModule,
     TileModule,
+    TooltipModule,
     ToasterModule,
     TypeformSurveyModule
 } from '@healthcatalyst/cashmere';
@@ -66,6 +67,7 @@ import {
         TableModule,
         TabsModule,
         TileModule,
+        TooltipModule,
         ToasterModule,
         TypeformSurveyModule
     ]
