@@ -23,7 +23,7 @@ describe('TabComponent', () => {
     });
 
     describe("variables", () => {
-        const expected = "testing"
+        const expected = "testing";
         it('should set tabTitle to a the assigned string of "testing"', () => {
             component.tabTitle = "testing";
             expect(component.tabTitle).toBe(expected);
