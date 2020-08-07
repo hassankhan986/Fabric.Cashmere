@@ -573,7 +573,7 @@ export class CalendarComponent implements AfterContentInit, AfterViewChecked, On
             let curMin = +this.minutes;
             curMin++;
             if (curMin > 59) {
-                curMin = 59;
+                curMin = 0;
             }
             this.minutes = curMin.toString();
         }
@@ -585,8 +585,8 @@ export class CalendarComponent implements AfterContentInit, AfterViewChecked, On
         } else {
             let curMin = +this.minutes;
             curMin--;
-            if (curMin < 1) {
-                curMin = 1;
+            if (curMin < 0) {
+                curMin = 59;
             }
             this.minutes = curMin.toString();
         }
