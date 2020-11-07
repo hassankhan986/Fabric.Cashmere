@@ -7,7 +7,8 @@
                 [fontSet]="_brandIconSet()"
                 [fontIcon]="_brandIconGlyph()"
                 [ngStyle]="{height: _brandIconSize(), 'font-size': _brandIconSize()}"
-            ></hc-icon>
+                [ngClass]="{ 'hc-navbar-icon-home-uri': homeUri !== '' }">
+            </hc-icon>
         </a>
     </div>
     <div class="navbar-app">
@@ -29,6 +30,7 @@
     <div class="hc-navbar-mobile-menu" *ngIf="_mobileMenu.first" (click)="_toggleMobileMenu()">
         <hc-icon fontSet="fa" [fontIcon]="_mobileMenuIcon" hcIconMd></hc-icon>
     </div>
+    <ng-content select="hc-navbar-cobrand"></ng-content>
 </nav>
 <div (click)="_menuClick($event)">
     <ng-content select="hc-navbar-mobile-menu"></ng-content>
